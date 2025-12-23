@@ -1,117 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Axetos OS Vision</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            color: #222;
-        }
-        header {
-            background-color: #1a1a2e;
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        main {
-            padding: 2rem 1rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        section {
-            margin-bottom: 3rem;
-        }
-        img.diagram {
-            display: block;
-            max-width: 100%;
-            margin: 2rem auto;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #1a1a2e;
-            margin-bottom: 1rem;
-        }
-        p {
-            line-height: 1.6;
-        }
-        ul {
-            margin: 1rem 0;
-            padding-left: 1.2rem;
-        }
-        footer {
-            background-color: #1a1a2e;
-            color: #fff;
-            text-align: center;
-            padding: 1.5rem 1rem;
-        }
-        a {
-            color: #f4f4f9;
-            text-decoration: underline;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axetos OS</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header>
-    <h1>Axetos OS</h1>
-    <p>The limitless, composable platform for modular software</p>
-</header>
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Axetos OS</h1>
+            <p class="subtitle">
+                A modular operating system for business — built to last.
+            </p>
+            <p class="tagline">
+                Core logic frozen. Capabilities composed. Interfaces defined.
+            </p>
+        </div>
+    </header>
 
-<main>
-    <section>
-        <h2>Our Vision</h2>
-        <p>Axetos OS is designed to last decades — even centuries. At its heart is a <strong>frozen core</strong> that never changes, ensuring stability and reliability, no matter how many modules or extensions are added. Modules define capabilities, and the platform layer allows organizations to configure and connect those capabilities without touching the core.</p>
-        <p>Every module, whether built by our team or third-party developers, operates under the authority of the core. Users can configure, extend, and compose behavior — but cannot create capabilities that don’t already exist.</p>
+    <!-- ARCHITECTURE -->
+    <section class="section">
+        <h2>Layered by Design</h2>
+        <p class="section-intro">
+            Axetos OS is built as a strictly layered system.  
+            Requests flow inward. Results flow outward.  
+            Each layer has one responsibility — and no shortcuts.
+        </p>
+
+        <div class="architecture">
+            <img src="images/architecture.png" alt="Axetos OS Architecture Blueprint" />
+        </div>
     </section>
 
-    <section>
-        <h2>Architecture Overview</h2>
-        <img src="images/core.png" alt="Axetos OS Core Architecture" class="diagram">
-        <p>The image above illustrates the three main layers of Axetos:</p>
-        <ul>
-            <li><strong>Core:</strong> Immutable foundation that enforces rules, contracts, and the system's invariants.</li>
-            <li><strong>Platform / Middle Layer:</strong> Handles configuration, rules, orchestration, and composition for all modules without altering the core. Think of it as the universal adapter between core and modules.</li>
-            <li><strong>Modules:</strong> Specialized components that provide capabilities such as client management, inventory, payments, or any other feature. Modules are independently developed but must comply with the core’s contracts.</li>
-        </ul>
+    <!-- LAYERS -->
+    <section class="section dark">
+        <h2>The Five Layers</h2>
+
+        <div class="layers">
+
+            <div class="layer">
+                <h3>1. Core Logic Layer</h3>
+                <p class="layer-subtitle">The tracks. The immutable center.</p>
+                <ul>
+                    <li>Business rules</li>
+                    <li>Deterministic execution</li>
+                    <li>No UI, no auth, no modules</li>
+                </ul>
+                <p>
+                    If something reaches the core, it is already trusted.
+                </p>
+            </div>
+
+            <div class="layer">
+                <h3>2. Platform / Middle Layer</h3>
+                <p class="layer-subtitle">How motion happens.</p>
+                <ul>
+                    <li>Workflow orchestration</li>
+                    <li>Scripting & configuration</li>
+                    <li>System abstractions</li>
+                </ul>
+                <p>
+                    This layer knows how — not whether.
+                </p>
+            </div>
+
+            <div class="layer">
+                <h3>3. Auth / Identity Layer</h3>
+                <p class="layer-subtitle">The ticketing system.</p>
+                <ul>
+                    <li>Authentication</li>
+                    <li>Authorization</li>
+                    <li>Rule enforcement</li>
+                </ul>
+                <p>
+                    If auth fails, nothing proceeds.
+                </p>
+            </div>
+
+            <div class="layer">
+                <h3>4. Module Management Layer</h3>
+                <p class="layer-subtitle">What the system is allowed to become.</p>
+                <ul>
+                    <li>Installed modules</li>
+                    <li>Enabled capabilities</li>
+                    <li>Structural composition</li>
+                </ul>
+                <p>
+                    No module here means no feature anywhere.
+                </p>
+            </div>
+
+            <div class="layer">
+                <h3>5. Visual / User Layer</h3>
+                <p class="layer-subtitle">The blank canvas.</p>
+                <ul>
+                    <li>User interfaces</li>
+                    <li>Applications</li>
+                    <li>Dashboards</li>
+                </ul>
+                <p>
+                    Different designs. Same rules.
+                </p>
+            </div>
+
+        </div>
     </section>
 
-    <section>
-        <h2>How It Works</h2>
-        <p>Modules can be adapted to the organization’s workflows through the middle layer. For example, a <em>Client Module</em> can be configured to show only the fields the company needs, reorder data, or add buttons for actions such as payments — but only if the corresponding module (like Payment Module) is installed. No module can alter the core or invent new capabilities.</p>
-        <p>In short:</p>
-        <ul>
-            <li>The core is frozen and governs the system.</li>
-            <li>The platform allows configuration and orchestration.</li>
-            <li>Modules provide capabilities and obey contracts.</li>
-            <li>Users can compose behavior, but cannot break or bypass the core.</li>
-        </ul>
+    <!-- WHY -->
+    <section class="section">
+        <h2>Why Axetos OS</h2>
+
+        <div class="reasons">
+            <div class="reason">
+                <h3>Structural Security</h3>
+                <p>
+                    Security is enforced by architecture, not convention.
+                </p>
+            </div>
+
+            <div class="reason">
+                <h3>True Modularity</h3>
+                <p>
+                    Features are compiled into the system — not toggled at runtime.
+                </p>
+            </div>
+
+            <div class="reason">
+                <h3>Longevity</h3>
+                <p>
+                    The core is frozen so the platform can evolve for decades.
+                </p>
+            </div>
+
+            <div class="reason">
+                <h3>Total Control</h3>
+                <p>
+                    Customization without chaos. Power without compromise.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Why Axetos Is Limitless</h2>
-        <p>Axetos allows software to evolve indefinitely. Modules can be added, replaced, or upgraded over time, and organizations can adapt their workflows without ever modifying the core. The platform ensures safe, consistent composition of modules while maintaining long-term stability. It is built to scale from a single module to millions, without ever compromising the system’s integrity.</p>
-        <p>In essence, <strong>Axetos is like a railway system:</strong> the track (core) never changes, the wheel assemblies and couplings (platform) are standardized, and specialized cars (modules) can be attached, removed, or replaced at will.</p>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>For inquiries or early access, contact: <a href="mailto:patricand@gmail.com">patricand@gmail.com</a></p>
-    </section>
-</main>
-
-<footer>
-    &copy; 2025 Axetos. All rights reserved.
-</footer>
-
-</body>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>
+          © Axetos OS<br>
+          Contact: <a href="mailto:patricand@gmail.com">patricand@gmail.com</a>
+      </p>
+    </footer>
+  </body>
 </html>
