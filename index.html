@@ -1,122 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Axetos OS - Vision</title>
-<style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background-color: #f7f8fa; color: #1f2937; line-height: 1.6; }
-    header { background-color: #0f172a; color: #fff; padding: 2rem; text-align: center; }
-    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-    header p { font-size: 1.25rem; opacity: 0.8; }
-    .section { padding: 3rem 2rem; max-width: 1200px; margin: auto; }
-    .section h2 { font-size: 2rem; margin-bottom: 1rem; text-align: center; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
-    .card { background-color: #fff; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 2rem; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s, box-shadow 0.2s; }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-    .card img { width: 80px; height: 80px; margin-bottom: 1rem; }
-    .card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-    .card p { text-align: center; opacity: 0.85; }
-    footer { background-color: #0f172a; color: #fff; padding: 2rem; text-align: center; }
-    footer a { color: #3b82f6; text-decoration: none; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem; }
-    .gallery img { width: 100%; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s; }
-    .gallery img:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-</style>
+    <meta charset="UTF-8">
+    <title>Axetos OS Vision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        header {
+            background-color: #1a1a2e;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            padding: 2rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        img.diagram {
+            display: block;
+            max-width: 100%;
+            margin: 2rem auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            margin: 1rem 0;
+            padding-left: 1.2rem;
+        }
+        footer {
+            background-color: #1a1a2e;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+        a {
+            color: #f4f4f9;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <h1>Axetos OS</h1>
-    <p>The Operating System of Structure, Control, and Clarity</p>
+    <p>The limitless, composable platform for modular software</p>
 </header>
 
-<section class="section">
-    <h2>Our Vision</h2>
-    <p style="max-width: 800px; margin: 1rem auto; text-align:center;">
-        Axetos OS is a modular, highly-configurable operating system for enterprise platforms. 
-        It provides a core framework for building complex business applications while maintaining clarity, 
-        control, and flexibility. Inspired by structural and mythological principles, Axetos is the pivot 
-        around which systems remain stable, resilient, and user-focused.
-    </p>
-</section>
+<main>
+    <section>
+        <h2>Our Vision</h2>
+        <p>Axetos OS is designed to last decades — even centuries. At its heart is a <strong>frozen core</strong> that never changes, ensuring stability and reliability, no matter how many modules or extensions are added. Modules define capabilities, and the platform layer allows organizations to configure and connect those capabilities without touching the core.</p>
+        <p>Every module, whether built by our team or third-party developers, operates under the authority of the core. Users can configure, extend, and compose behavior — but cannot create capabilities that don’t already exist.</p>
+    </section>
 
-<section class="section">
-    <h2>Core Principles</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="" alt="Modularity Icon">
-            <h3>Modularity</h3>
-            <p>Build and integrate modules seamlessly. Axetos OS adapts to your business without forcing rigid structures.</p>
-        </div>
-        <div class="card">
-            <img src="" alt="Scalability Icon">
-            <h3>Scalability</h3>
-            <p>From small teams to global enterprises, Axetos OS scales effortlessly while keeping operations coherent.</p>
-        </div>
-        <div class="card">
-            <img src="" alt="Security Icon">
-            <h3>Security</h3>
-            <p>Granular permissions and structural design ensure sensitive data remains secure across all modules.</p>
-        </div>
-        <div class="card">
-            <img src="" alt="Flexibility Icon">
-            <h3>Flexibility</h3>
-            <p>Dynamic rules, configurable workflows, and adaptable UI make Axetos OS mold perfectly to your company’s vision.</p>
-        </div>
-    </div>
-</section>
+    <section>
+        <h2>Architecture Overview</h2>
+        <img src="images/core.png" alt="Axetos OS Core Architecture" class="diagram">
+        <p>The image above illustrates the three main layers of Axetos:</p>
+        <ul>
+            <li><strong>Core:</strong> Immutable foundation that enforces rules, contracts, and the system's invariants.</li>
+            <li><strong>Platform / Middle Layer:</strong> Handles configuration, rules, orchestration, and composition for all modules without altering the core. Think of it as the universal adapter between core and modules.</li>
+            <li><strong>Modules:</strong> Specialized components that provide capabilities such as client management, inventory, payments, or any other feature. Modules are independently developed but must comply with the core’s contracts.</li>
+        </ul>
+    </section>
 
-<section class="section">
-    <h2>Key Features / Modules</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>CRM Core</h3>
-            <p>Advanced client management, rule-based permissions, and modular dashboards tailored to any organization.</p>
-        </div>
-        <div class="card">
-            <h3>Analytics & Reporting</h3>
-            <p>Real-time insights with customizable dashboards and historical reporting to drive informed decisions.</p>
-        </div>
-        <div class="card">
-            <h3>Automation & Workflows</h3>
-            <p>Define workflows, triggers, and automations without coding, keeping operations consistent and efficient.</p>
-        </div>
-        <div class="card">
-            <h3>Multi-brand Support</h3>
-            <p>Manage multiple brands, clients, and deployments from a single unified platform with full configuration flexibility.</p>
-        </div>
-    </div>
-</section>
+    <section>
+        <h2>How It Works</h2>
+        <p>Modules can be adapted to the organization’s workflows through the middle layer. For example, a <em>Client Module</em> can be configured to show only the fields the company needs, reorder data, or add buttons for actions such as payments — but only if the corresponding module (like Payment Module) is installed. No module can alter the core or invent new capabilities.</p>
+        <p>In short:</p>
+        <ul>
+            <li>The core is frozen and governs the system.</li>
+            <li>The platform allows configuration and orchestration.</li>
+            <li>Modules provide capabilities and obey contracts.</li>
+            <li>Users can compose behavior, but cannot break or bypass the core.</li>
+        </ul>
+    </section>
 
-<section class="section">
-    <h2>Roadmap</h2>
-    <p style="max-width: 800px; margin: 1rem auto; text-align:center;">
-        Axetos OS is designed to evolve. Upcoming features include:
-    </p>
-    <ul style="max-width: 600px; margin: 1rem auto 0 auto; list-style-type: disc; padding-left: 1.5rem;">
-        <li>Softphone integration with dynamic caller ID selection</li>
-        <li>Advanced KYC & client trading modules</li>
-        <li>Frontend-aware, dynamic permission matrix for per-page and per-element access control</li>
-        <li>Modular plugin system for feature expansion</li>
-        <li>License verification and multi-tiered admin controls</li>
-    </ul>
-</section>
+    <section>
+        <h2>Why Axetos Is Limitless</h2>
+        <p>Axetos allows software to evolve indefinitely. Modules can be added, replaced, or upgraded over time, and organizations can adapt their workflows without ever modifying the core. The platform ensures safe, consistent composition of modules while maintaining long-term stability. It is built to scale from a single module to millions, without ever compromising the system’s integrity.</p>
+        <p>In essence, <strong>Axetos is like a railway system:</strong> the track (core) never changes, the wheel assemblies and couplings (platform) are standardized, and specialized cars (modules) can be attached, removed, or replaced at will.</p>
+    </section>
 
-<section class="section">
-    <h2>Get Involved</h2>
-    <p style="max-width: 700px; margin: 1rem auto; text-align:center;">
-        Axetos OS is in active development. Collaborators, developers, and visionaries are welcome to contribute.
-        Share ideas, suggest features, or join the early development.
-    </p>
-    <p style="text-align:center; margin-top:1rem;">
-        Contact: <a href="mailto:patricand@gmail.com">patricand@gmail.com</a>
-    </p>
-</section>
+    <section>
+        <h2>Contact</h2>
+        <p>For inquiries or early access, contact: <a href="mailto:patricand@gmail.com">patricand@gmail.com</a></p>
+    </section>
+</main>
 
 <footer>
-    &copy; 2025 AXETOS | <a href="mailto:patricand@gmail.com">patricand@gmail.com</a>
+    &copy; 2025 Axetos. All rights reserved.
 </footer>
 
 </body>
