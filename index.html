@@ -1,155 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Axetos OS</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c1418" />
+  <meta name="description" content="AxetosOS is a modular software platform with an open-ended goal: build virtually any kind of software, given the right Modules. Compose, reuse, extend and evolve." />
+  <meta property="og:title" content="AxetosOS — Build anything. With the right Modules." />
+  <meta property="og:description" content="An open-ended modular software platform for building virtually any kind of software." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/social-preview.png" />
+  <title>AxetosOS — Build anything. With the right Modules.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="nav-wrap container">
+      <a class="brand" href="#top" aria-label="AxetosOS home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-text">AXETOS<span>OS</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#philosophy">Philosophy</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#evolution">Live evolution</a>
+        <a href="#direction">The direction</a>
+        <a class="nav-github" href="https://github.com/AXETOS" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- HERO -->
-    <header class="hero">
+  <main id="main">
+    <section class="hero dark-grid" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner container">
         <div class="hero-content">
-            <h1>Axetos OS</h1>
-            <p class="subtitle">
-                A modular operating system for business — built to last.
-            </p>
-            <p class="tagline">
-                Core logic frozen. Capabilities composed. Interfaces defined.
-            </p>
+          <div class="eyebrow"><span class="signal"></span> INDEPENDENT RESEARCH & DEVELOPMENT <span class="eyebrow-index">/ 001</span></div>
+          <h1 id="hero-title">Build<br /><em>anything.</em><br /><span class="headline-outline">Keep evolving.</span></h1>
+          <p class="hero-lede"><strong>With the right Modules, the possibilities are virtually endless.</strong> AxetosOS aims to make it possible to develop any kind of software from independently reusable, extensible building blocks — without a fixed product category or destination.</p>
+          <div class="hero-actions">
+            <a class="btn btn-lime" href="#philosophy">Explore the vision <span aria-hidden="true">↘</span></a>
+            <a class="btn btn-ghost" href="https://github.com/AXETOS" target="_blank" rel="noopener noreferrer">Explore the work <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-caption">THE MODULES DEFINE THE CAPABILITIES. NOT THE OTHER WAY AROUND.</p>
         </div>
-    </header>
-
-    <!-- ARCHITECTURE -->
-    <section class="section">
-        <h2>Layered by Design</h2>
-        <p class="section-intro">
-            Axetos OS is built as a strictly layered system.  
-            Requests flow inward. Results flow outward.  
-            Each layer has one responsibility — and no shortcuts.
-        </p>
-
-        <div class="architecture">
-            <img src="images/architecture.png" alt="Axetos OS Architecture Blueprint" />
+        <div class="hero-visual" aria-label="Conceptual diagram of reusable, interconnected software modules">
+          <div class="hero-visual-top"><span>COMPOSITION / LIVE MODEL</span><span class="live-light">● DESIGN CONCEPT</span></div>
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <svg class="hero-lines" viewBox="0 0 530 525" aria-hidden="true">
+            <path d="M265 261 L131 111 M265 261 L416 130 M265 261 L94 362 M265 261 L422 390 M265 261 L270 455" />
+            <circle cx="265" cy="261" r="105"/><circle cx="265" cy="261" r="166"/>
+          </svg>
+          <div class="core-symbol"><span class="small-code">[ BOOTSTRAP ]</span><strong>CORE</strong><small>Minimal foundation</small></div>
+          <div class="float-module float-a"><span class="node-dot turquoise"></span><small>SYSTEM MODULE</small><strong>Discovery</strong></div>
+          <div class="float-module float-b"><span class="node-dot lavender"></span><small>SYSTEM MODULE</small><strong>Display</strong></div>
+          <div class="float-module float-c"><span class="node-dot lime"></span><small>MODULE</small><strong>Workbench</strong></div>
+          <div class="float-module float-d"><span class="node-dot orange"></span><small>MODULE</small><strong>Product</strong></div>
+          <div class="float-module float-e"><span class="node-dot turquoise"></span><small>CHILD MODULE</small><strong>Capability</strong></div>
+          <div class="hero-visual-bottom"><span>NO FIXED APPLICATION DOMAIN</span><span>∞ POSSIBILITY SPACE</span></div>
         </div>
+      </div>
+      <div class="hero-rail container"><span>ANY KIND OF SOFTWARE</span><span class="rail-line"></span><span>WITH THE RIGHT MODULES</span><span class="rail-line"></span><span>NO ARTIFICIAL CEILING</span></div>
     </section>
 
-    <!-- LAYERS -->
-    <section class="section dark">
-        <h2>The Five Layers</h2>
-
-        <div class="layers">
-
-            <div class="layer">
-                <h3>1. Core Logic Layer</h3>
-                <p class="layer-subtitle">The tracks. The immutable center.</p>
-                <ul>
-                    <li>Business rules</li>
-                    <li>Deterministic execution</li>
-                    <li>No UI, no auth, no modules</li>
-                </ul>
-                <p>
-                    If something reaches the core, it is already trusted.
-                </p>
-            </div>
-
-            <div class="layer">
-                <h3>2. Platform / Middle Layer</h3>
-                <p class="layer-subtitle">How motion happens.</p>
-                <ul>
-                    <li>Workflow orchestration</li>
-                    <li>Scripting & configuration</li>
-                    <li>System abstractions</li>
-                </ul>
-                <p>
-                    This layer knows how — not whether.
-                </p>
-            </div>
-
-            <div class="layer">
-                <h3>3. Auth / Identity Layer</h3>
-                <p class="layer-subtitle">The ticketing system.</p>
-                <ul>
-                    <li>Authentication</li>
-                    <li>Authorization</li>
-                    <li>Rule enforcement</li>
-                </ul>
-                <p>
-                    If auth fails, nothing proceeds.
-                </p>
-            </div>
-
-            <div class="layer">
-                <h3>4. Module Management Layer</h3>
-                <p class="layer-subtitle">What the system is allowed to become.</p>
-                <ul>
-                    <li>Installed modules</li>
-                    <li>Enabled capabilities</li>
-                    <li>Structural composition</li>
-                </ul>
-                <p>
-                    No module here means no feature anywhere.
-                </p>
-            </div>
-
-            <div class="layer">
-                <h3>5. Visual / User Layer</h3>
-                <p class="layer-subtitle">The blank canvas.</p>
-                <ul>
-                    <li>User interfaces</li>
-                    <li>Applications</li>
-                    <li>Dashboards</li>
-                </ul>
-                <p>
-                    Different designs. Same rules.
-                </p>
-            </div>
-
+    <section id="philosophy" class="philosophy section-pad light-section">
+      <div class="container">
+        <div class="section-label"><span>01 / THE PHILOSOPHY</span><span>START WITH THE QUESTION</span></div>
+        <div class="philosophy-grid">
+          <h2>What if software<br />didn't have to <span class="serif-italic">start over?</span></h2>
+          <div class="section-intro">
+            <p>Software evolves. Requirements change. Entirely new ideas emerge. Yet too often, the architecture decides in advance what an application can become.</p>
+            <p>AxetosOS starts from a different assumption: <strong>capabilities shouldn't be permanently trapped inside the products they were originally built for.</strong></p>
+          </div>
         </div>
+        <div class="principle-grid">
+          <article class="principle"><span class="principle-no">01 —</span><div class="principle-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="7" width="14" height="14" rx="3"/><rect x="27" y="7" width="14" height="14" rx="3"/><rect x="7" y="27" width="14" height="14" rx="3"/><path d="M27 34h14M34 27v14"/></svg></div><h3>Everything can be a capability.</h3><p>UI elements, services, tools, logic and entire product features can be built as independent modules.</p></article>
+          <article class="principle"><span class="principle-no">02 —</span><div class="principle-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="10" cy="24" r="5"/><circle cx="37" cy="10" r="5"/><circle cx="37" cy="38" r="5"/><path d="M15 22l17-10M15 26l17 10"/></svg></div><h3>Composition beats confinement.</h3><p>Reuse what exists. Connect independent capabilities. Create products without a prescribed stack or industry.</p></article>
+          <article class="principle"><span class="principle-no">03 —</span><div class="principle-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 15h26l-7-7M38 33H12l7 7"/><path d="M36 15a14 14 0 0 1-24 13M12 33a14 14 0 0 1 24-13"/></svg></div><h3>Change without rebuilding everything.</h3><p>Extend, customize and eventually replace capabilities while preserving the parts that already work.</p></article>
+        </div>
+      </div>
     </section>
 
-    <!-- WHY -->
-    <section class="section">
-        <h2>Why Axetos OS</h2>
-
-        <div class="reasons">
-            <div class="reason">
-                <h3>Structural Security</h3>
-                <p>
-                    Security is enforced by architecture, not convention.
-                </p>
+    <section id="architecture" class="architecture section-pad dark-section dark-grid">
+      <div class="container">
+        <div class="section-label light-label"><span>02 / THE ARCHITECTURE</span><span>NOT FIVE LAYERS. NOT A FIXED STACK.</span></div>
+        <div class="architecture-heading"><div><h2>A small foundation.<br /><span>Everything else, composable.</span></h2></div><p>The foundation does just enough to start the system. Capabilities are discovered and assembled through modules — and modules can themselves contain other modules.</p></div>
+        <div class="explorer">
+          <div class="explorer-sidebar">
+            <div class="explorer-kicker"><span class="signal"></span> ARCHITECTURE EXPLORER</div>
+            <div class="explorer-tabs" role="tablist" aria-label="Architecture concepts">
+              <button class="explorer-tab is-active" type="button" role="tab" id="tab-foundation" aria-selected="true" aria-controls="panel-foundation" data-panel="foundation"><span>01</span><strong>Minimal foundation</strong><small>Only what is essential</small></button>
+              <button class="explorer-tab" type="button" role="tab" id="tab-composition" aria-selected="false" aria-controls="panel-composition" data-panel="composition" tabindex="-1"><span>02</span><strong>Recursive composition</strong><small>Modules within modules</small></button>
+              <button class="explorer-tab" type="button" role="tab" id="tab-extensibility" aria-selected="false" aria-controls="panel-extensibility" data-panel="extensibility" tabindex="-1"><span>03</span><strong>Open-ended products</strong><small>Built to be extended</small></button>
             </div>
-
-            <div class="reason">
-                <h3>True Modularity</h3>
-                <p>
-                    Features are compiled into the system — not toggled at runtime.
-                </p>
+            <p class="explorer-note">Conceptual architecture. Exact contracts and lifecycle behavior evolve with implementation.</p>
+          </div>
+          <div class="explorer-stage">
+            <div class="stage-top"><span>AXETOSOS / SYSTEM VIEW</span><span><span class="status-dot"></span> CONCEPT MODEL</span></div>
+            <div class="stage-panel is-active" id="panel-foundation" role="tabpanel" aria-labelledby="tab-foundation">
+              <div class="foundation-diagram">
+                <div class="diagram-card foundation-core"><span class="diagram-micro">BOOTSTRAP / MINIMAL</span><strong>CORE</strong><small>Starts the configured startup Module</small></div>
+                <div class="diagram-connector"></div>
+                <div class="diagram-card startup-module"><span class="diagram-micro">HANDOFF</span><strong>Startup Module</strong><small>Provides the next capabilities</small></div>
+                <div class="diagram-connector"></div>
+                <div class="module-fan"><div class="diagram-card mini"><span class="diagram-micro">SYSTEM</span><strong>Discovery</strong></div><div class="diagram-card mini"><span class="diagram-micro">SYSTEM</span><strong>Display</strong></div><div class="diagram-card mini"><span class="diagram-micro">OTHER</span><strong>Modules…</strong></div></div>
+              </div>
+              <div class="stage-caption"><span>FOUNDATION</span><p>The CORE is intentionally small. Discovery, display, interaction and other behavior live in Modules rather than mandatory numbered layers.</p></div>
             </div>
-
-            <div class="reason">
-                <h3>Longevity</h3>
-                <p>
-                    The core is frozen so the platform can evolve for decades.
-                </p>
+            <div class="stage-panel" id="panel-composition" role="tabpanel" aria-labelledby="tab-composition" hidden>
+              <div class="tree-diagram">
+                <div class="tree-root"><span class="diagram-micro">PRODUCT COMPOSITION</span><strong>Application</strong></div>
+                <div class="tree-stem"></div>
+                <div class="tree-branches"><div class="tree-branch"><strong>UI Module</strong><small>Display + interaction</small><div class="tree-child">Child: Controls</div><div class="tree-child">Child: Layout</div></div><div class="tree-branch"><strong>Data Module</strong><small>Persistent capability</small><div class="tree-child">Child: Storage</div><div class="tree-child">Child: Queries</div></div><div class="tree-branch"><strong>Logic Module</strong><small>Domain behavior</small><div class="tree-child">Child: Rules</div><div class="tree-child">Child: Actions</div></div></div>
+              </div>
+              <div class="stage-caption"><span>COMPOSITION</span><p>Modules can contain Child Modules recursively. These examples are illustrative; AxetosOS does not prescribe these three categories as a fixed hierarchy.</p></div>
             </div>
-
-            <div class="reason">
-                <h3>Total Control</h3>
-                <p>
-                    Customization without chaos. Power without compromise.
-                </p>
+            <div class="stage-panel" id="panel-extensibility" role="tabpanel" aria-labelledby="tab-extensibility" hidden>
+              <div class="extension-diagram"><div class="ext-product"><span class="diagram-micro">AXETOSOS-BUILT PRODUCT</span><strong>Standalone Application</strong><div class="ext-sub">Compiled code + composition metadata + supported extension hooks</div></div><span class="ext-plus" aria-hidden="true">+</span><div class="ext-layer"><span class="diagram-micro">USER EXTENSION</span><strong>Additional Modules</strong><div class="ext-sub">New UI, behavior or layouts</div></div><span class="ext-equal" aria-hidden="true">→</span><div class="ext-result"><span class="diagram-micro">NEW COMPOSITION</span><strong>Extended Product</strong><div class="ext-sub">Rebuild / package independently</div></div></div>
+              <div class="stage-caption"><span>EXTENSIBILITY</span><p>The vision applies to products deliberately built with AxetosOS extension support — not arbitrary third-party executables.</p></div>
             </div>
+          </div>
         </div>
+        <div class="module-types"><div><span class="type-dot type-system"></span><h3>System Modules</h3><p>Fundamental environment capabilities, such as discovery and display.</p></div><div><span class="type-dot type-helper"></span><h3>Helper Modules</h3><p>Reusable enhancements that expand what the environment can do.</p></div><div><span class="type-dot type-normal"></span><h3>Modules & Child Modules</h3><p>Functional building blocks that can be composed and nested recursively.</p></div></div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p>
-          © Axetos OS<br>
-          Contact: <a href="mailto:patricand@gmail.com">patricand@gmail.com</a>
-      </p>
-    </footer>
-  </body>
+    <section class="possibilities section-pad light-section" id="capabilities">
+      <div class="container">
+        <div class="section-label"><span>03 / OPEN-ENDED BY DESIGN</span><span>ONE PLATFORM. MANY DIRECTIONS.</span></div>
+        <div class="possibilities-top"><h2>Not a list of products.<br /><span class="serif-italic">An endless possibility space.</span></h2><p><strong>The end goal: virtually any kind of software, with the right Modules.</strong> Build a capability once, then carry it into places its original developer may never have imagined. These four domains are illustrations, not limits.</p></div>
+        <div class="possibilities-grid">
+          <article class="possibility-card pos-big"><span class="card-index">01 / APPLICATIONS</span><div class="possibility-art art-app" aria-hidden="true"><div class="mini-app"><span class="mini-app-top"><i></i><i></i><i></i></span><div class="mini-app-body"><div class="mini-sidebar"><b></b><b></b><b></b></div><div class="mini-content"><div></div><div></div><div></div></div></div></div></div><h3>Business & operational systems</h3><p>CRM, workflows, internal tools and purpose-built software assembled from reusable capabilities.</p></article>
+          <article class="possibility-card pos-purple"><span class="card-index">02 / DEVELOPMENT</span><div class="possibility-art art-code" aria-hidden="true"><span>&lt;module&gt;</span><span>&nbsp;&nbsp;create()</span><span>&nbsp;&nbsp;extend()</span><span>&lt;/module&gt;</span></div><h3>Tools that build tools</h3><p>Editors, compilers and development environments that can evolve through the same Module model.</p></article>
+          <article class="possibility-card pos-blue"><span class="card-index">03 / INTERACTIVE</span><div class="possibility-art art-play" aria-hidden="true"><div class="play-orbit"></div><div class="play-cube">▧</div></div><h3>Games & emulation</h3><p>Reuse rendering, input, simulation and other capabilities across entirely different products.</p></article>
+          <article class="possibility-card pos-dark"><span class="card-index">04 / BEYOND THE SCREEN</span><div class="possibility-art art-circuit" aria-hidden="true"><span class="circuit-line"></span><span class="circuit-node one"></span><span class="circuit-node two"></span><span class="circuit-node three"></span><span class="circuit-node four"></span></div><h3>Simulations & hardware concepts</h3><p>Explore systems where virtual components model physical interfaces and real-world constraints.</p></article>
+        </div>
+        <p class="possibilities-footnote">The limit is not a predefined list of application types. It is the set of capabilities available — and the new Modules that developers can create. These are examples of the vision, not claims that every use case is implemented.</p>
+      </div>
+    </section>
+
+    <section id="evolution" class="evolution section-pad cream-section">
+      <div class="container">
+        <div class="section-label"><span>04 / SEAMLESS EVOLUTION</span><span>DESIGN TARGET</span></div>
+        <div class="evolution-layout"><div class="evolution-copy"><h2>Upgrade the system.<br /><span class="serif-italic">Not the interruption.</span></h2><p>Imagine replacing an active Display Module while an object is rotating. The new version loads and validates alongside the old. When ready, it takes over at a safe boundary — without resetting the object or interrupting the user.</p><div class="handover-steps"><div><span>01</span><p>Keep the working version active</p></div><div><span>02</span><p>Load and test the new candidate</p></div><div><span>03</span><p>Handover when ready; otherwise keep the old one</p></div></div><p class="caveat">True seamless handover depends on compatible contracts, state management and resources. It is a design goal, not a guarantee for every module.</p></div>
+          <div class="demo-box" aria-label="Interactive illustration of seamless module handover">
+            <div class="demo-header"><span class="demo-live"><span class="status-dot"></span> MODULE HANDOVER / CONCEPT</span><span>DEMO 01</span></div>
+            <div class="demo-stage"><div class="demo-axis" aria-hidden="true"></div><div class="rotating-object" aria-hidden="true"><svg class="render-wire" viewBox="0 0 240 240"><path d="M62 70 L159 50 L192 96 L93 117 Z M62 70 V155 L93 194 V117 M93 117 L192 96 V177 L93 194 M159 50 V133 L192 177 M62 155 L159 133 L192 96" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round" fill="none" opacity=".98"/><circle cx="93" cy="117" r="3" fill="currentColor"/></svg><svg class="render-shaded" viewBox="0 0 240 240"><defs><linearGradient id="face-top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d2fef1"/><stop offset="1" stop-color="#68adcc"/></linearGradient><linearGradient id="face-right" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#87d7df"/><stop offset="1" stop-color="#3469aa"/></linearGradient></defs><path d="M62 70 L159 50 L192 96 L93 117 Z" fill="url(#face-top)"/><path d="M62 70 L93 117 V194 L62 155 Z" fill="#36577a"/><path d="M93 117 L192 96 V177 L93 194 Z" fill="url(#face-right)"/><path d="M62 70 L159 50 L192 96 L93 117 Z M62 70 V155 L93 194 V117 M93 117 L192 96 V177 L93 194" stroke="#e2fffa" stroke-width="1.2" stroke-linejoin="round" fill="none"/></svg></div><div class="demo-annotation"><span class="render-label">RENDERER V1 / 2D PROJECTION</span><span>CONTINUOUS STATE</span></div></div>
+            <div class="demo-status" role="status" aria-live="polite"><div><span class="demo-status-label">CURRENT MODULE</span><strong id="demo-version">Display v1.0</strong></div><div><span class="demo-status-label">HANDOVER STATUS</span><strong id="demo-result">Stable / serving</strong></div></div>
+            <div class="demo-actions"><button class="demo-button primary" type="button" id="demo-promote">Validate & activate v2 <span>↗</span></button><button class="demo-button" type="button" id="demo-fail">Simulate failure</button><button class="demo-reset" type="button" id="demo-reset" aria-label="Reset illustration">↺</button></div>
+            <p class="demo-disclaimer">Visual illustration only — not a running AxetosOS module-update implementation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section-pad dark-section" id="story">
+      <div class="container">
+        <div class="section-label light-label"><span>05 / HOW THE IDEA GREW</span><span>ONE QUESTION LEADS TO ANOTHER</span></div>
+        <div class="story-grid"><div><h2>It started with<br /><span>one limitation.</span></h2><p class="story-lede">AxetosOS didn't begin as an attempt to reinvent software. It began with a practical desire to let people change the way their CRM looked and worked.</p></div><div class="story-timeline"><article><span>01 / THE START</span><h3>Let customers customize their CRM.</h3><p>Give users more control over the software they depend on.</p></article><article><span>02 / THE QUESTION</span><h3>Why can't the tools be customizable too?</h3><p>If controls and editors are made from Modules, the development environment itself can evolve.</p></article><article><span>03 / THE VISION</span><h3>Why stop at applications?</h3><p>With the right Modules, the platform should be able to develop virtually anything — including software categories that have not yet been imagined.</p></article></div></div>
+      </div>
+    </section>
+
+    <section class="direction section-pad light-section" id="direction">
+      <div class="container">
+        <div class="section-label"><span>06 / WHERE IT STANDS</span><span>VISION & IMPLEMENTATION</span></div>
+        <div class="direction-heading"><h2>Ambitious by design.<br /><span class="serif-italic">Grounded in actual work.</span></h2><p>AxetosOS is an independent R&D project. Its architecture has evolved through working experiments and substantial refactoring. The long-term vision is larger than the features available today.</p></div>
+        <div class="progress-grid"><article><span class="stage-status current">CURRENT FOUNDATION</span><h3>Native desktop direction</h3><p>A .NET / Avalonia desktop foundation, small startup architecture and early Module-driven environment form the current development direction.</p></article><article><span class="stage-status active">ACTIVE ARCHITECTURAL WORK</span><h3>Modular discovery & composition</h3><p>Developing clearer Module contracts, recursive composition and independent capabilities rather than prescribed numbered layers.</p></article><article><span class="stage-status future">LONG-TERM VISION</span><h3>Live replacement & product extension</h3><p>Validated module handover, self-hosted tooling and post-compilation customization of AxetosOS-authored products remain design targets.</p></article></div>
+        <div class="proof-band"><div><span class="proof-label">RELATED ENGINEERING WORK</span><h3>Ideas explored through real systems.</h3><p>Past and parallel projects include CRM tooling, an NES emulator and a market-data server — practical work that informs the platform's direction.</p></div><div class="proof-links"><a href="https://github.com/AXETOS" target="_blank" rel="noopener noreferrer">Explore AXETOS on GitHub <span>↗</span></a><a href="https://github.com/AXETOS/AxetosOS.Products.NES" target="_blank" rel="noopener noreferrer">NES emulator project <span>↗</span></a><a href="https://github.com/AXETOS/AxetosMarketDataServer" target="_blank" rel="noopener noreferrer">Market data server <span>↗</span></a></div></div>
+      </div>
+    </section>
+
+    <section class="closing dark-grid"><div class="container closing-inner"><div class="section-label light-label"><span>THE BIG PICTURE</span><span>KEEP BUILDING</span></div><h2>Build anything.<br /><span>Keep going.</span></h2><p>With the right Modules, AxetosOS should never dictate the limits of what you can create. Even a compiled AxetosOS-built product can be the starting point for what comes next.</p><div class="closing-actions"><a class="btn btn-lime" href="https://github.com/AXETOS" target="_blank" rel="noopener noreferrer">Explore the project <span aria-hidden="true">↗</span></a><a class="btn btn-ghost" href="mailto:patricand@gmail.com?subject=AxetosOS%20-%20Get%20in%20touch">Get in touch <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span class="brand-text">AXETOS<span>OS</span></span></a><p>Independent software research & development.<br />A vision for software without artificial boundaries.</p><div class="footer-links"><a href="https://github.com/AXETOS" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:patricand@gmail.com">Contact ↗</a><a href="#top">Back to top ↑</a></div><span class="footer-copy">© <span id="copyright-year">2026</span> AXETOS</span></div></footer>
+</body>
 </html>
